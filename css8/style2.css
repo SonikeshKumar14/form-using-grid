@@ -1,0 +1,43 @@
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.signup-form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+    max-width: 100rem;
+    grid-auto-rows: 4rem;
+    gap: 2rem 4rem;
+}
+
+#username, #email, #signup-submit {
+    grid-column-start: span 2;
+}
+
+form > input {
+    border: 1px solid rgba(206, 206, 206);
+}
+
+#signup-submit {
+    font-size: 2rem;
+    font-weight: 800;
+    background: #212529;
+    color: #fff;
+}
+
+@media (max-width: 1200) 
+{
+    .signup-form {
+        max-width: 70%;
+    } 
+}
+
+@media (max-width: 600px)
+{
+    #first-name, #last-name, #password, #password2, #check {
+        grid-column-start: span 2;
+    }
+}
+
